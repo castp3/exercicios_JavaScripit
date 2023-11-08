@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio01</title>
+    <style>
+        body{
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Números Pares</h1>
+    <script>
+        var num = parseInt(prompt("Digite o número final"));
+        var par = 0;
+        var impar = 0;
+        for(i = 0; i <= num ; i++){
+            if(i % 2 == 0){
+                alert(i);
+                par ++;
+            }
+            else{
+                impar++;
+            }
+        }
+        alert("No intervalo entre 0 e "+num+" há "+par+" números pares e "+impar+" números impáres")
+    </script>
+</body>
